@@ -223,3 +223,39 @@ function oddNum (odd){
     }
 }
 oddNum([1,2,3,4,5,6,7,8,9])
+
+
+function dogDetails(name, breed, color, height){
+    return {
+        name, breed,color,height
+    }
+
+}
+
+const dogTwo = dogDetails("brad", "german shepherd", "brown", 6.7)
+dogTwo.owner = 'festus'
+const dogThree = dogDetails("stoner", "boxer", "white", 3.4)
+dogThree['owner'] = 'mark'
+
+delete dogThree.breed;
+console.log( dogThree )
+console.log( dogTwo)
+
+//constructor functions are named with pascal case and the function keyword are nouns. they contain objects with key-value pairs
+function Dog (nam, bred, colr, heght){
+    this.nam = nam,
+    this.bred = bred,
+    this.colr = colr,
+    this.heght = heght
+}
+
+const dogfour = new Dog('mario', 'american eskimo', 'white', 3.5)
+console.log(dogfour)
+
+
+
+function addNumbers(num3, num4){
+    return num3 + num4
+}
+
+const n = addNumbers(10,20)
