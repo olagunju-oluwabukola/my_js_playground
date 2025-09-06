@@ -259,3 +259,52 @@ function addNumbers(num3, num4){
 }
 
 const n = addNumbers(10,20)
+
+
+
+// obbjects are copied by values while primitives are coppied by reference
+//copied by reference
+let var1 = 10
+let var2 = var1
+
+var1 = 100
+
+console.log (var1)
+console.log(var2)
+//copied by value
+let var3 = {value: 100}
+let var4 = var3
+
+var3.value = 300
+
+console.log(var3)
+console.log(var4)
+
+//making a clone of an object
+let var6 = {value : 10}
+let var7 = {...var6}
+
+Object.assign(var6, var7)
+
+var7.value = 209
+
+console.log(var7, var6)
+
+// object iteration
+const ObjValue = {
+title: 'my list',
+item: 'some stuffs',
+list: 10
+}
+//iterates values
+const values = Object.values(ObjValue)
+//iterates keys
+const keys = Object.keys(ObjValue)
+//iterates entries (whole  properties)
+const entries = Object.entries(ObjValue)
+
+console.log(values)
+console.log(keys)
+console.log(entries)
+
+
