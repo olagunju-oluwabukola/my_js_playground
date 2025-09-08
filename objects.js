@@ -86,10 +86,23 @@ let min = 10
 const randomNumber = Math.round(Math.random()* (max-min) + min)
 console.log(randomNumber)
 
-let sentence = " I am so blessed "
+let sentence = "I am so blessed"
 const sentenceReplace = sentence.replace('so', 'super')
 console.log(sentenceReplace)
 const sentenceTrim = sentence.trim()
 console.log(sentenceTrim)
 const sentenceIncludes = sentence.includes('blessed')
 console.log(sentenceIncludes)
+console.log(sentence)
+const sentenceStart = sentence.startsWith('I')
+console.log(sentenceStart)
+const sentenceSplit = sentence.split(' ')
+console.log(sentenceSplit)
+
+const sentenceLowerCase = sentence.toLocaleLowerCase()
+const sentenceUpperCase = sentence.toUpperCase()
+console.log("lowercase:" + " " +  sentenceLowerCase, "uppercase:" +  " " +   sentenceUpperCase)
+
+const sentencePosition = sentence.indexOf("s")
+
+console.log(sentencePosition)
