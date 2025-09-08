@@ -85,3 +85,11 @@ let max = 1
 let min = 10
 const randomNumber = Math.round(Math.random()* (max-min) + min)
 console.log(randomNumber)
+
+let sentence = " I am so blessed "
+const sentenceReplace = sentence.replace('so', 'super')
+console.log(sentenceReplace)
+const sentenceTrim = sentence.trim()
+console.log(sentenceTrim)
+const sentenceIncludes = sentence.includes('blessed')
+console.log(sentenceIncludes)
