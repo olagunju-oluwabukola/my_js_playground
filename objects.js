@@ -103,6 +103,31 @@ const sentenceLowerCase = sentence.toLocaleLowerCase()
 const sentenceUpperCase = sentence.toUpperCase()
 console.log("lowercase:" + " " +  sentenceLowerCase, "uppercase:" +  " " +   sentenceUpperCase)
 
-const sentencePosition = sentence.indexOf("s")
+const sentencePosition = sentence.indexOf("I")
 
 console.log(sentencePosition)
+
+// template literals
+const Lname = 'ola'
+const fname = 'Ade'
+const fullName = `${Lname} ${fname}`
+console.log(fullName)
+
+// date objects
+
+const now = new Date()
+console.log(now)
+// gets the date
+const new_date = now.getDate()
+console.log(new_date)
+//gets the day based on the index 0=sunday---
+const new_month = now.getDay()
+console.log(new_month)
+const day = now.getDay()
+const dayNmae =  ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+const getDayByName = dayNmae[day]
+console.log(getDayByName)
+
+//
+const time = now.getFullYear()
+console.log(time)
