@@ -55,3 +55,4 @@ console.log(split_Sentence)
 
 const sortedArray = array1.sort()
 console.log(sortedArray)
+
