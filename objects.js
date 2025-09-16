@@ -97,7 +97,7 @@ console.log(sentence)
 const sentenceStart = sentence.startsWith('I')
 console.log(sentenceStart)
 const sentenceSplit = sentence.split(' ')
-console.log(sentenceSplit)
+console.log('split' + sentenceSplit)
 
 const sentenceLowerCase = sentence.toLocaleLowerCase()
 const sentenceUpperCase = sentence.toUpperCase()
