@@ -85,3 +85,36 @@ function createUser (name, role='admin', status = 'active'){
 
 createUser("bukola", "super admin", "inactive")
 createUser("olaoluwa")
+
+//ggetters and setters
+
+const info = {
+    name: 'javascript course',
+    duration: '3 hours',
+   get details(){
+        return `${this.name} is ${this.duration}`
+    },
+
+    set details(value){
+        // if (typeof value !== "string"){
+        //     throw new Error(`value, ${value} is not a string`)
+        // }
+    let parts = value.split (" is ")
+    this.name = parts[0]
+    this.duration = parts[1]
+    }
+};
+
+console.log(info.details)
+//  info.details = "javscript course  is 10 hours"
+// const newNmae = info.name = 'go lang'
+// const newTime = info.details = '12 hours'
+// info.details =  newNmae +  newTime
+
+try{
+    info.details = "javscript course  is 10 hours";
+}
+catch (e){
+    console.log(`${e.message}`)
+}
+// console.log(info.details)
