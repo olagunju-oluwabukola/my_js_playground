@@ -166,3 +166,20 @@ if (sentence.includes("new")){
 }else{
     console.log(false)
 }
+
+const employees = [
+    {
+        id: 1,
+        name: "Jim"
+    },
+    {
+        id: 2,
+        name :"Kate"
+    }
+]
+
+const employee = employees.find(function(e){
+    return e.name = "jim"
+})
+
+console.log(employee)
