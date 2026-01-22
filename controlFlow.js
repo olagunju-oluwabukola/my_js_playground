@@ -55,3 +55,114 @@ do {
     const names = ["David", "Dam", "Kay", "Jude"]
     for (const elements of names)
         console.log(elements)
+
+    const items = [1,10,7,2,3,4,5]
+    for ( const i of items){
+        if (i === 4){
+            break
+        }
+        console.log(i)
+
+    }
+
+    const obj = {a:1, b:2, c:3}
+    for (const O in obj){
+        if (O === 'b')
+        {
+            break
+        }
+        console.log(O)
+    }
+
+ for (i= 0; i<10; i++){
+    if (i%2 === 0){
+        continue
+    }
+
+    console.log(i)
+ }
+
+ function getDog (name, breed, weight, age){
+    return{
+        name,
+        breed,
+        weight,
+        age,
+        eat(){
+            console.log('Eat')
+        },
+        bark(){
+            console.log("whoof!")
+        }
+
+    }
+
+ }
+
+ const newDog = getDog("Marley", "german shepherd", 10, 2)
+ console.log(newDog)
+
+// constructor function
+ function Details (name, number, teacher,school){
+    this.name = name;
+    this.number = number;
+    this.teacher = teacher;
+    this.school = school
+ }
+
+ const assign = new Details("Nusery2", 20, "miss blessing", "bnps")
+ console.log(assign)
+
+
+ const person = {
+    name: "onegirllikethat"
+ }
+
+ person["favouritefood"] = "Garri"
+
+ console.log(person)
+
+
+ const a = { value:20}
+ const b= a
+a.value = 100
+ console.log(a)
+ console.log(b)
+
+ const item = {
+    name: "ade",
+    gender: "female",
+    age: 10
+ }
+const key = Object.keys(item)
+const value = Object.values(item)
+const prop = Object.entries(item)
+console.log(key)
+console.log(value)
+console.log(prop)
+
+const var1 = {name : "dami"}
+const var2 = {...var1}
+var2.name = 100
+console.log(var2)
+
+const var3 = {val: 10}
+const var4 = var3
+Object.assign[var4, var3];
+var4.val = 100
+console.log(var3)
+console.log(var4)
+
+for (i=0; i<= 100; i++){
+    console.log(i)
+}
+
+const randomNum = Math.round(Math.random()*(1-100))
+console.log(randomNum)
+
+const sentence = 'This is a new sring'
+if (sentence.includes("new")){
+    console.log(true)
+}else{
+    console.log(false)
+}
