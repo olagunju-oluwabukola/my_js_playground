@@ -19,3 +19,39 @@ switch (job) {
                 console.log("builds solution")
                 default: ("can be anything")
 }
+
+
+const numbers = [1,2,33,7,9,8,6,4]
+
+for (let i = 0; i < numbers.length; i++){
+    console.log(numbers[i])
+}
+
+
+
+let fuel= 10
+while( fuel > 0){
+    console.log("driving")
+    fuel--
+}
+
+
+let i = 0
+do {
+    console.log(i)
+    i++;
+} while(i<10)
+
+    const course = {
+        title : 'javascript',
+        duaration : 3,
+        section: 12
+    }
+
+    for (const k in course){
+        console.log(course[k])
+    }
+
+    const names = ["David", "Dam", "Kay", "Jude"]
+    for (const elements of names)
+        console.log(elements)
