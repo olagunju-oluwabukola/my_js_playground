@@ -183,3 +183,33 @@ const employee = employees.find(function(e){
 })
 
 console.log(employee)
+
+
+const add = (v1, v2)=>{
+return v1+v2
+}
+
+console.log(add(10,2))
+
+const list = [
+    {
+        id: 1,
+        item : "milk"
+    },
+    {
+        id: 2,
+        item: "meat"
+    }
+]
+
+const listInclude = list.find((e)=>{
+return e.item = "meat"
+})
+
+console.log(listInclude)
+
+const arrayList = [10,12,24,76]
+const Output = arrayList.forEach((number, index) => {
+    console.log(`${index} of ${number}`)
+})
+console.log(Output)
