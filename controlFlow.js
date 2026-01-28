@@ -213,3 +213,34 @@ const Output = arrayList.forEach((number, index) => {
     console.log(`${index} of ${number}`)
 })
 console.log(Output)
+
+
+const arr1 = [12, 14, 89,90]
+const arr2 = [78,76,78,43]
+const both = arr1.concat(arr2)
+const both2 = {...arr1, arr2}
+console.log(both)
+console.log(both2)
+
+const num = [10,25,78,90,54,33,25]
+const numFilter = num.filter(num=>num%2 ===0)
+
+console.log(numFilter)
+
+const jobRole = [
+    {
+        name: "ben",
+        role : "dev"
+    },
+    {
+        name: "ken",
+        role: "dev"
+    },
+    {
+        name: "hen",
+        role:"pm"
+    }
+];
+
+const filterRole = jobRole.filter(jobRole => jobRole.role === "dev")
+console.log(filterRole)
