@@ -244,3 +244,26 @@ const jobRole = [
 
 const filterRole = jobRole.filter(jobRole => jobRole.role === "dev")
 console.log(filterRole)
+
+const mapNum = [2,5,78,99]
+const mappedNum = mapNum.map(m => m*m)
+console.log(mappedNum)
+
+const char = ["d","j","k","l"]
+const join = char.join("-")
+console.log(join)
+const mappedChar = char.map(m => m.toUpperCase())
+console.log(mappedChar)
+
+const jobMap = jobRole.map(jobRole => ({
+    ...jobRole,
+    name: jobRole.name.toUpperCase()
+}))
+
+console.log(jobMap)
+
+const sum = mapNum.reduce((a,b)=>{
+    return a + b
+}, 0)
+
+console.log(sum)
